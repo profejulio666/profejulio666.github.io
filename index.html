@@ -1,132 +1,222 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIDA A EQUILIBRADA</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-        }
-        
-        header {
-            background-color: #4CAF50;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anarquismo: La Verdad Detrás de las Ideas</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        nav {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-        }
+    body {
+      font-family: 'sans-serif';
+      background-color: white;
+      color: black;
+      line-height: 1.8;
+      scroll-behavior: smooth;
+    }
 
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+    }
 
-        nav ul li {
-            display: inline;
-            margin: 0 20px;
-        }
+    h1 {
+      color: #FF0000;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
 
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+    nav {
+      background-color: #f0f0f0;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
 
-        .section {
-            float: left;
-            width: 33.33%;
-            padding: 20px;
-        }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
 
-        .section h2 {
-            font-size: 24px;
-            color: #333;
-        }
+    nav a {
+      color: #FF0000;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      padding: 8px 16px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
 
-        .section p {
-            font-size: 16px;
-            color: #666;
-        }
+    nav a:hover {
+      background-color: #ffe0e0;
+    }
 
-        .read-more {
-            background-color: #4CAF50;
-            color: #fff;
-            padding: 5px 10px;
-            text-decoration: none;
-        }
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
 
-        .read-more:hover {
-            background-color: #45a049;
-        }
+    h2 {
+      color: #FF0000;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            clear: both;
-        }
-    </style>
+    p {
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+    }
+
+    .founder {
+      margin: 30px 0;
+      padding: 20px;
+      border-left: 3px solid #FF0000;
+      background-color: #f9f9f9;
+    }
+
+    .resources-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .resources-list a {
+      color: #FF0000;
+      text-decoration: none;
+      padding: 10px 20px;
+      border: 2px solid #FF0000;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      width: fit-content;
+    }
+
+    .resources-list a:hover {
+      background-color: #FF0000;
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 40px;
+      background-color: #f0f0f0;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.7rem;
+      }
+
+      nav ul {
+        gap: 15px;
+      }
+
+      section {
+        padding: 40px 15px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>VIDA A EQUILIBRADA</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#salud">SALUD</a></li>
-            <li><a href="#tecnologia">TECNOLOGÍA</a></li>
-            <li><a href="#viajes">VIAJES</a></li>
-            <li><a href="#finanzas">FINANZAS</a></li>
-            <li><a href="#moda">MODA</a></li>
-            <li><a href="#comida">COMIDA</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        <div class="section" id="salud">
-            <h2>Salud</h2>
-            <p>Descubre consejos para llevar un estilo de vida más saludable.</p>
-            <a class="read-more" href="#">Leer más</a>
-        </div>
-        <div class="section" id="tecnologia">
-            <h2>Tecnología</h2>
-            <p>Explora las últimas tendencias tecnológicas y novedades.</p>
-            <a class="read-more" href="#">Leer más</a>
-        </div>
-        <div class="section" id="viajes">
-            <h2>Viajes</h2>
-            <p>Planifica tu próximo viaje y descubre destinos impresionantes.</p>
-            <a class="read-more" href="#">Leer más</a>
-        </div>
-        <div class="section" id="finanzas">
-            <h2>Finanzas</h2>
-            <p>Aprende a gestionar tus finanzas personales y ahorra dinero.</p>
-            <a class="read-more" href="#">Leer más</a>
-        </div>
-        <div class="section" id="moda">
-            <h2>Moda</h2>
-            <p>Consejos de moda y las últimas tendencias en vestimenta.</p>
-            <a class="read-more" href="#">Leer más</a>
-        </div>
-        <div class="section" id="comida">
-            <h2>Comida</h2>
-            <p>Recetas deliciosas y consejos gastronómicos.</p>
-            <a class="read-more" href="#">Leer más</a>
-        </div>
+  <header>
+    <h1>Anarquismo: La Verdad Detrás de las Ideas</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#que-es">¿Qué es?</a></li>
+      <li><a href="#fundadores">Los Fundadores</a></li>
+      <li><a href="#historia">Historia</a></li>
+      <li><a href="#recursos">Recursos</a></li>
+    </ul>
+  </nav>
+
+  <section id="inicio">
+    <h2>¿Puede existir una sociedad sin Estado?</h2>
+    <p>El anarquismo no es caos, es orden sin dominación. Es la búsqueda de una sociedad organizada desde abajo, sin jerarquías impuestas, donde la libertad y la solidaridad sean los pilares fundamentales. Más allá de los mitos, descubre las ideas profundas que han inspirado movimientos sociales durante siglos.</p>
+  </section>
+
+  <section id="que-es">
+    <h2>¿Qué es el Anarquismo?</h2>
+    <p>El anarquismo es una filosofía política y social que defiende la abolición del Estado y todas las formas de autoridad opresiva. No significa desorden, sino una organización social voluntaria, basada en la cooperación, la ayuda mutua y la autogestión.</p>
+    <p>Los anarquistas creen que las personas pueden organizar sus vidas y comunidades sin necesidad de gobernantes, policías o estructuras jerárquicas. La libertad individual y la responsabilidad colectiva van de la mano.</p>
+  </section>
+
+  <section id="fundadores">
+    <h2>Los Fundadores</h2>
+    
+    <div class="founder">
+      <h3>Michael Bakunin</h3>
+      <p>Filósofo ruso del siglo XIX, uno de los principales teóricos del anarquismo. Defendió la revolución social y la destrucción del Estado como herramienta de opresión. Fue un crítico feroz del autoritarismo, incluso en movimientos revolucionarios.</p>
     </div>
-    <footer>
-        <p>&copy; 2023 VIDA A EQUILIBRADA</p>
-    </footer>
+
+    <div class="founder">
+      <h3>Piotr Kropotkin</h3>
+      <p>Científico y geógrafo ruso, desarrolló la teoría de la ayuda mutua como principio biológico y social. Argumentó que la cooperación, no la competencia, es lo que ha permitido la evolución humana. Promovió el comunismo libertario.</p>
+    </div>
+
+    <div class="founder">
+      <h3>Errico Malatesta</h3>
+      <p>Revolucionario italiano, activista de base que dedicó su vida a la organización obrera. Creía en la acción directa y en la educación como herramientas para la transformación social. Fue un defensor del anarquismo práctico.</p>
+    </div>
+  </section>
+
+  <section id="historia">
+    <h2>Historia del Anarquismo</h2>
+    <p>Las raíces del pensamiento anarquista se remontan a siglos atrás, pero se consolidó en el siglo XIX con figuras como Proudhon, el primero en llamarse a sí mismo anarquista. Durante la Primera Internacional, hubo una fuerte disputa entre marxistas y anarquistas, liderados por Bakunin.</p>
+    <p>El movimiento anarquista tuvo un papel clave en levantamientos obreros, como la Comuna de París (1871) y la Revolución Rusa (1917), aunque fue reprimido por el Estado bolchevique. En España, durante la Guerra Civil (1936-1939), millones de personas vivieron bajo colectividades anarquistas en Cataluña y Aragón.</p>
+    <p>Hoy, el anarquismo sigue inspirando movimientos sociales, ecologistas, feministas y anticapitalistas en todo el mundo.</p>
+  </section>
+
+  <section id="recursos">
+    <h2>Recursos</h2>
+    <p>Aquí tienes algunos enlaces para profundizar en el pensamiento anarquista:</p>
+    <div class="resources-list">
+      <a href="https://es.wikipedia.org/wiki/Anarquismo" target="_blank">Introducción al Anarquismo (Wikipedia)</a>
+      <a href="https://www.kropotkin.info/" target="_blank">Obras de Piotr Kropotkin</a>
+      <a href="https://www.bakunin.com/" target="_blank">Textos de Michael Bakunin</a>
+      <a href="https://anarquismo.net/" target="_blank">Revistas y medios anarquistas contemporáneos</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Anarquismo: La Verdad Detrás de las Ideas. Sitio educativo sin fines de lucro.</p>
+  </footer>
+
+  <script>
+    // Aseguramos el desplazamiento suave incluso si el CSS no lo soporta
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 </body>
 </html>
